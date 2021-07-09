@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screening COVID19 | RS Universitas AEON</title>
+	<style type="text/css">
+		#menu {
+			position: relative; float: top;
+			padding-left: 50px; padding-bottom: 14px;
+			padding-top: 14px; padding-right: 50px;
+    		border-bottom: 3px solid #065a7f; 
+		}
+		
+		body{
+			min-height: 100vh; background: white;
+			font-family: sans-serif; color: #404040;
+		}
+
+		.container{
+			margin: auto; width: 500px;
+			max-width: 90%;
+		}
+
+		.container form{
+			width: 100%; height: 100%;
+			background:#F1F2F2;
+			border-radius: 4px; box-shadow: 0 8px 16px rgba(0,0,0,.3);
+		}
+
+		.container form h3{
+			text-align: left; margin-bottom: 20px;
+		}
+
+		.container form .btn{
+			margin-left: 50%;
+			transform: translateX(-50%);
+			width: 90px; height: 30px;
+			border: none; outline: none;
+			background: #065A7F; cursor: pointer;
+			font-size: 16px; color: white; border-radius: 5px;
+			text-transform: uppercase;
+		}
+
+		.container form .form-control{
+			width: 90%; height: 40px;
+			background: #white;
+			border-radius: 4px;
+			border: 1px solid silver;
+			margin: 10px 0 18px 0;
+			padding: 0 10px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div id="menu">
+        <a href="#"><img src="img/RS AEON.png" width="150" ></a>
+        	<div style="float: right; padding-top: 25px">
+        		<a href="Screening.html">Home</a>
+        		&emsp;<a href="../prak1/prak1.html">About Me</a>
+        		&emsp;<a href="../prak2/home.html">Berita Terkini</a>
+        	</div>
+        </div><br>
+
+	<div class="container">
+        <h2 style="margin-bottom:5; font-family:sans-serif; color: #404040;"><center>Screening COVID-19</h2>
+        	<hr width="130" align="center" color="#065A7F"><br><br>
+		<form action="kesana.php" method="post">
+			<fieldset>
+				<h3>Data Identitas Pasien</h3>
+				<p>Mohon isi data diri Anda agar kami dapat melayani Anda dengan lebih baik.</p><br>
+
+				<div class="form-group">
+            <label>Lokasi RS Universitas Aeon</label>
+            <select name="lokasi" class="form-control">
+            	<option value="null">Pilih salah satu</option>
+                <option value="Wonosobo">RS Universitas AEON Wonosobo</option>
+                <option value="Magelang">RS Universitas AEON Magelang</option>
+                <option value="Malang">RS Universitas AEON Malang</option>
+                <option value="Klaten">RS Universitas AEON Klaten</option>
+            </select>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Paket yang dipilih</label>
+            <select name="lokasi" class="form-control">
+            	<option value="null">Pilih salah satu</option>
+                <option value="rapid">Rapid Test COVID19 - Rp. 150.000 (</option>
+                <option value="pcr">PCR Test - RP. 850.000</option>
+                <option value="antigen">Swab Antigen - Rp. 195.000</option>
+            </select>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Tanggal Pemeriksaan (Minimal H-2 Setelah Bukti Transfer Diterima RS)
+							Pendaftaran Tidak Tersedia di Hari Minggu dan Hari Libur Nasional</label>
+            <input type="date" name="tglperiksa" class="form-control">
+        		</div class="form-group"><br>
+
+        		<div class="form-group">
+         	  		<label>Nama Pasien</label>
+	          	  		<input type="text" name="nama" class="form-control">
+        		</div><br>
+
+        		<div class="form-group">
+	         	  	<label>Alamat Tempat Tinggal</label>
+	         	  		<textarea rows="5%" cols="60%"></textarea>
+        		</div><br>
+
+        		<div>
+            		<label>Jenis Kelamin </label><br>
+            			<label><input type="radio" name="jenis_kelamin" value="laki-laki" > Laki-laki</label>
+            			<label><input type="radio" name="jenis_kelamin" value="perempuan" > Perempuan</label>
+       			</div><br>
+
+        		<div class="form-group">
+         	  		<label>Nomor KTP/SIM/Paspor/KITAS</label>
+         	  			<input type="text" name="nomor" class="form-control">
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Tempat Lahir</label>
+	          	  		<input type="text" name="tmptlahir" class="form-control">
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Tanggal Lahir</label>
+	          	  		<input type="date" name="tgllahir" class="form-control">
+        		</div><br>
+
+
+
+        		<div class="form-group">
+         	  		<label>Nomor Telepon</label><br>
+         	  			<input type="text" name="tlp" class="form-control">
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Alamat Email</label><br>
+         	  			<input type="text" name="email" class="form-control">
+        		</div><br>
+
+        		<input type="submit" class="btn" name="submit" value="Kirim">
+
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>

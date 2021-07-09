@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screening COVID19 | RS Universitas AEON</title>
+	<style type="text/css">
+		#menu {
+			position: relative; float: top;
+			padding-left: 50px; padding-bottom: 14px;
+			padding-top: 14px; padding-right: 50px;
+    		border-bottom: 3px solid #065a7f; 
+		}
+		
+		body{
+			min-height: 100vh; background: white;
+			font-family: sans-serif; color: #404040;
+		}
+
+		.container{
+			margin: auto; width: 500px;
+			max-width: 90%;
+		}
+
+		.container form{
+			width: 100%; height: 100%;
+			background:#F1F2F2;
+			border-radius: 4px; box-shadow: 0 8px 16px rgba(0,0,0,.3);
+		}
+
+		.container form h3{
+			text-align: left; margin-bottom: 20px;
+		}
+
+		.container form .btn{
+			margin-left: 50%;
+			transform: translateX(-50%);
+			width: 125px; height: 30px;
+			border: none; outline: none;
+			background: #065A7F; cursor: pointer;
+			font-size: 16px; color: white; border-radius: 5px;
+			text-transform: uppercase;
+		}
+
+		#footer {
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="menu">
+        <a href="#"><img src="img/RS AEON.png" width="150" ></a>
+        	<div style="float: right; padding-top: 25px">
+        		<a href="#">Home</a>
+        		&emsp;<a href="../prak1/prak1.html">About Me(prak1)</a>
+        		&emsp;<a href="../prak2/home.html">Berita Terkini(prak2)</a>
+        	</div>
+        </div><br>
+
+	<div class="container">
+        <h2 style="margin-bottom:5; font-family:sans-serif; color: #404040;"><center>Screening COVID-19</h2>
+        	<hr width="130" align="center" color="#065A7F"><br><br>
+		<form action="daftar.html" method="get">
+			<fieldset>
+				<h3>Gejala Klinis</h3>
+
+				<div class="form-group">
+         	  		<label>Apakah Anda saat ini sedang demam atau memiliki riwayat demam dalam beberapa minggu terakhir?</label><br>
+          	  		<label><input type="radio" name="demam" value="ydemam"> Ya </label><br>
+          	  		<label><input type="radio" name="demam" value="tdkdemam"> Tidak </label>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda mengalami batuk?</label><br>
+          	  		<label><input type="radio" name="batuk" value="ybatuk"> Ya </label><br>
+          	  		<label><input type="radio" name="batuk" value="tdkbatuk"> Tidak </label>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda mengalami pilek?</label><br>
+          	  		<label><input type="radio" name="pilek" value="ypilek"> Ya </label><br>
+          	  		<label><input type="radio" name="pilek" value="tdkpilek"> Tidak </label>
+        		</div class="form-group"><br>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda merasa nyeri tenggorokan atau nyeri menelan?</label><br>
+	          	  	<label><input type="radio" name="radang" value="yradang"> Ya </label><br>
+	          	  	<label><input type="radio" name="radang" value="tdkradang"> Tidak </label>
+        		</div><br>
+
+        		<div class="form-group">
+	         	  	<label>Apakah Anda merasa nyeri pada bagian perut?</label><br>
+	          	  	<label><input type="radio" name="perut" value="ybatuk"> Ya </label><br>
+          	  		<label><input type="radio" name="perut" value="tdkbatuk"> Tidak </label>
+        		</div><br>
+
+        		<h3>Faktor Risiko/Riwayat Kontak </h3>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda memiliki riwayat perjalanan atau tinggal di luar negeri yang melaporkan transmisi lokal 14 hari terakhir?</label><br>
+          	  		<label><input type="radio" name="ln" value="yln"> Ya </label><br>
+          	  		<label><input type="radio" name="ln" value="tdkln"> Tidak </label>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda memiliki riwayat perjalanan atau tinggal di area transmisi lokal di Indonesia 14 hari terakhir?</label><br>
+          	  		<label><input type="radio" name="lokal" value="ylokal"> Ya </label><br>
+          	  		<label><input type="radio" name="lokal" value="tdklokal"> Tidak </label>
+        		</div><br>
+
+        		<div class="form-group">
+         	  		<label>Apakah Anda memiliki riwayat kontak dengan kasus terkonfirmasi atau probabel COVID-19 14 hari terakhir?</label><br>
+          	  		<label><input type="radio" name="probabel" value="yprobabel"> Ya </label><br>
+          	  		<label><input type="radio" name="probabel" value="tdkprobabel"> Tidak </label>
+        		</div><br>
+
+
+        		<input type="submit" class="btn" name="submit" value="Selanjutnya">
+
+			</fieldset>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
